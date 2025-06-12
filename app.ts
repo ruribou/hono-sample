@@ -4,8 +4,6 @@ import diaryApp from './src/routes/diary'
 
 const app = new OpenAPIHono()
 
-app.get('/', (c) => c.text('Hello Hono!'))
-
 app.route('/api', diaryApp)
 
 app.doc('/doc', {
@@ -16,6 +14,6 @@ app.doc('/doc', {
   },
 })
 
-app.get('/docs', swaggerUI({ url: '/doc' }))
+app.get('/', swaggerUI({ url: '/doc' }))
 
 export default app
