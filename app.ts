@@ -6,10 +6,8 @@ const app = new OpenAPIHono()
 
 app.get('/', (c) => c.text('Hello Hono!'))
 
-// /api 配下に日記 API をマウント
 app.route('/api', diaryApp)
 
-// OpenAPI ドキュメント (JSON)
 app.doc('/doc', {
   openapi: '3.0.0',
   info: {
@@ -18,7 +16,6 @@ app.doc('/doc', {
   },
 })
 
-// Swagger UI
 app.get('/docs', swaggerUI({ url: '/doc' }))
 
 export default app

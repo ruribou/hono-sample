@@ -1,6 +1,6 @@
 import { DiaryEntry, NewDiaryEntry } from '../model/diary'
 
-// デモ用のメモリ内データベース
+// デモ用
 let entries: DiaryEntry[] = [
   {
     id: 1,

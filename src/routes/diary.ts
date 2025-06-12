@@ -96,7 +96,7 @@ app.openapi(detailRoute, (c) => {
   return c.json(entry, 200)
 })
 
-// 更新
+
 const updateRouteDef = createRoute({
   method: 'put',
   path: '/diary/{id}',
@@ -131,7 +131,7 @@ app.openapi(updateRouteDef, async (c) => {
   return c.json(entry, 200)
 })
 
-// 削除
+
 const deleteRouteDef = createRoute({
   method: 'delete',
   path: '/diary/{id}',

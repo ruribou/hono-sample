@@ -22,7 +22,6 @@ export const DiaryEntrySchema = z
   })
   .openapi('DiaryEntry')
 
-// 新規作成用 (id は不要)
 export const NewDiaryEntrySchema = DiaryEntrySchema.omit({ id: true }).openapi(
   'NewDiaryEntry'
 )
