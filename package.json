@@ -1,7 +1,7 @@
 {
   "name": "hono-sample",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot app.ts"
   },
   "dependencies": {
     "hono": "^4.7.11"
